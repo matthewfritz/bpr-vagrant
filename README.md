@@ -10,7 +10,9 @@ Ensure you get the OS disk image from the [CentOS](#CentOS) portion of the [Requ
 
 ### CentOS
 
-Download the [CentOS 6.10 x86-64 Minimal ISO](https://vault.centos.org/6.10/isos/x86_64/CentOS-6.10-x86_64-minimal.iso). This is the minimal installation disk image for the OS. The Vagrantfile references this for quicker provisioning.
+Download the [CentOS 6.10 x86-64 Minimal ISO](https://vault.centos.org/6.10/isos/x86_64/CentOS-6.10-x86_64-minimal.iso) and place it in the `images` directory.
+
+This is the minimal installation disk image for the OS. The Vagrantfile references this for quicker provisioning.
 
 ## Scripts and Aliases
 
