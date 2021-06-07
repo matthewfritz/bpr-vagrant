@@ -1,6 +1,6 @@
-# BPR Vagrant Machine
+# BPR Vagrant Environment
 
-Vagrant development environment to mimic the Yahoo Small Business host and provide a consistent environment between development and production.
+Vagrant development environment to mimic the Yahoo Small Business host for Burbank Paranormal Research and provide a consistent environment between development and production.
 
 The web machine involves both CentOS 6.10 and PHP 5.3.29.
 
