@@ -14,6 +14,10 @@ Download the [CentOS 6.10 x86-64 Minimal ISO](https://vault.centos.org/6.10/isos
 
 This is the minimal installation disk image for the OS. The Vagrantfile references this for quicker provisioning.
 
+### VirtualBox
+
+Ensure you have the latest version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed.
+
 ## Scripts and Aliases
 
 ### Nix-based Systems
@@ -23,9 +27,9 @@ On a nix-based system, you can add the following aliases to your `.bashrc` file 
 ```
 BPR_VAGRANT="/path/to/bpr-vagrant"
 alias bpr-vagrant="cd ${BPR_VAGRANT}"
-alias bpr-init="pushd ${BPR_VAGRANT} && ./add-vbox-guest-additions.sh && ./start.sh && popd"
-alias bpr-start="pushd ${BPR_VAGRANT} && ./start.sh && popd"
-alias bpr-stop="pushd ${BPR_VAGRANT} && ./stop.sh && popd"
+alias bpr-init="pushd ${BPR_VAGRANT} && ./add-vbox-guest-additions.sh && ./start-vms.sh && popd"
+alias bpr-start="pushd ${BPR_VAGRANT} && ./start-vms.sh && popd"
+alias bpr-stop="pushd ${BPR_VAGRANT} && ./stop-vms.sh && popd"
 alias bpr-restart="bpr-stop && bpr-start"
 ```
 
@@ -35,6 +39,6 @@ The `bpr-init` alias should be executed for the first run of the machine to add 
 
 ### Windows Systems
 
-The `start.bat` and `stop.bat` scripts perform the same tasks as `start.sh` and `stop.sh`. They simply start and stop the machine, respectively.
+The `start-vms.bat` and `stop-vms.bat` scripts perform the same tasks as `start-vms.sh` and `stop-vms.sh`. They simply start and stop the machine, respectively.
 
-Ensure you run `add-vbox-guest-additions.bat` prior to running `start.bat` for the first time.
+Ensure you run `add-vbox-guest-additions.bat` prior to running `start-vms.bat` for the first time.

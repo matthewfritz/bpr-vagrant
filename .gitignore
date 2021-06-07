@@ -1,2 +1,3 @@
-CentOS-6.10-x86_64-minimal.iso
+images/*.dmg
+images/*.iso
 data/

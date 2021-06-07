@@ -1,5 +1,6 @@
+#! /bin/bash
 pushd machines
 pushd bpr-web
-vagrant plugin install vagrant-vbguest
+vagrant down
 popd
 popd
