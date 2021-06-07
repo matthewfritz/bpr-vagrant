@@ -29,6 +29,8 @@ alias bpr-restart="bpr-stop && bpr-start"
 
 Ensure you `chmod +x *.sh` the scripts for execution permissions.
 
+The `bpr-init` alias should be executed for the first run of the machine to add the VirtualBox Guest Additions and then start the machine. Subsequent starts can simply use the `bpr-start` alias instead.
+
 ### Windows Systems
 
 The `start.bat` and `stop.bat` scripts perform the same tasks as `start.sh` and `stop.sh`. They simply start and stop the machine, respectively.
