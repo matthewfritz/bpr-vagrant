@@ -1,3 +1,4 @@
 images/*.dmg
+images/*.img
 images/*.iso
-data/
+machines/**/data/
